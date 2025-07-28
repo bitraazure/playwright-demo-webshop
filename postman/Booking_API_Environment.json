@@ -1,0 +1,45 @@
+{
+	"id": "c32a3736-4cdc-43b9-a6bc-04ee455b7ee6",
+	"name": "Assignment - Booking API",
+	"values": [
+		{
+			"key": "fname",
+			"value": "Automation",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "lname",
+			"value": "Specialist",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "uname",
+			"value": "admin",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "pwd",
+			"value": "password123",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "b_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "b_token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-07-28T20:01:03.545Z",
+	"_postman_exported_using": "Postman/11.49.0"
+}
