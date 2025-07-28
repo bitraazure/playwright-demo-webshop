@@ -36,9 +36,24 @@ npx playwright show-report
 
 ### API Testing with Postman/Newman
 
-newman run restful-booker.postman_collection.json
+How to install Newman?
+•	Download and install node.js
+•	Cmd > node -v
+•	Cmd > npm -v
+•	Cmd > npm install -g newman
+•	Cmd > newman -v
 
-### Author
-Github: bitraazure
-Contact: sarathbabubitra@gmail.com
+How to execute postman collections from command prompt?
+•	Export collections and save it with .json extension (Booking_API_Collection.json)
+•	Export Environment variables and save it with .json extension (Booking_API_Environment.json)
+•	Cmd > cd <location_of_the_json_files_exported>
+•	Cmd > newman run <collections_file.json> -e <environment_file.json>
+
+How to generate standard HTML report?
+•	Install newman-reporter-html
+•	Cmd > npm i -g newman-reporter-html
+•	Cmd > newman run <collections_file.json> -e <environment_file.json>
+•	Cmd > newman run <collections_file.json> -e <environment_file.json> -r html
+When we run this command, a folder with a name ‘newman’ will be created with html report in it.
+
 
