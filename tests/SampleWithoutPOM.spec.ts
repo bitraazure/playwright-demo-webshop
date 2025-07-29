@@ -46,10 +46,10 @@
         await page.locator("span:has-text('Shopping cart')").click(); // Go to Shopping Cart
 
         // Assertion to check the added product name
-        await expect(page.locator("tbody tr td a[class='product-name']")).toContainText('Fiction');
+        await expect(page.locator("table.cart tbody tr td a[class='product-name']")).toContainText('Fiction');
         
         // Assertion to check the quantity of the products
-        await expect(page.locator("tbody tr td input[type='text']")).toHaveValue("1");
+        await expect(page.locator("table.cart tbody tr td input[type='text']")).toHaveValue("1");
 
         // Assertion to check the quantity in Shopping cart
         await expect(page.locator("span[class='cart-qty']")).toHaveText("(1)")
@@ -66,7 +66,7 @@
         await page.click('input[name="updatecart"]');
 
         // Assertion to check the quantity of the products
-        await expect(page.locator("tbody tr td input[type='text']")).toHaveValue("2");
+        await expect(page.locator("table.cart tbody tr td input[type='text']")).toHaveValue("2");
         
         // Assertion to check the quantity in Shopping cart
         await expect(page.locator("span[class='cart-qty']")).toHaveText("(2)")
@@ -90,5 +90,4 @@
     
         await page.screenshot({path: "screenshots/"+"EmptyShoppingCartPage"+Date.now()+".png"});
     });
-
 });

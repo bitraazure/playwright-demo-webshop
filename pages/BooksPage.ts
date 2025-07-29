@@ -22,6 +22,7 @@ export class BooksPage
     async addBookToCart()
     {
         await this.page.locator("#add-to-cart-button-45").click();
+        await this.page.waitForTimeout(2000);
         await expect(this.page.locator("p.content")).toContainText("added to your shopping cart");
     }
 }

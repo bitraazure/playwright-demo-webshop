@@ -37,7 +37,7 @@ test.describe("Demo Web Shop Tests (POM)", ()=>{
         const cart = new ShoppingCart(page);
 
         await login.gotoLoginPage();
-        await login.loginDetails(TestConfig.validEmail, TestConfig.validPassword);
+        await home.gotoShoppingCart();
         await cart.clearCartIfNotEmpty();
         await home.gotoBooks();
         await books.selectBookName();
@@ -55,7 +55,7 @@ test.describe("Demo Web Shop Tests (POM)", ()=>{
         const cart = new ShoppingCart(page);
 
         await login.gotoLoginPage();
-        await login.loginDetails(TestConfig.validEmail, TestConfig.validPassword);
+        await home.gotoShoppingCart();
         await cart.clearCartIfNotEmpty();
         await home.gotoBooks();
         await books.selectBookName();
